@@ -1,0 +1,7 @@
+--sql server CDM Primary Key Constraints for OMOP Common Data Model 5.4
+
+ALTER TABLE $(VOCAB_DATABASE).$(VOCAB_SCHEMA).concept ADD CONSTRAINT xpk_concept PRIMARY KEY NONCLUSTERED (concept_id);
+ALTER TABLE $(VOCAB_DATABASE).$(VOCAB_SCHEMA).vocabulary ADD CONSTRAINT xpk_vocabulary PRIMARY KEY NONCLUSTERED (vocabulary_id);
+ALTER TABLE $(VOCAB_DATABASE).$(VOCAB_SCHEMA).domain ADD CONSTRAINT xpk_domain PRIMARY KEY NONCLUSTERED (domain_id);
+ALTER TABLE $(VOCAB_DATABASE).$(VOCAB_SCHEMA).concept_class ADD CONSTRAINT xpk_concept_class PRIMARY KEY NONCLUSTERED (concept_class_id);
+ALTER TABLE $(VOCAB_DATABASE).$(VOCAB_SCHEMA).relationship ADD CONSTRAINT xpk_relationship PRIMARY KEY NONCLUSTERED (relationship_id);

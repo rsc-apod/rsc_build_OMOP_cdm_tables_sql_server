@@ -1,0 +1,17 @@
+
+This is a version of OHDSI sourced scripts to build tables for CDM and 
+to load vocab files.
+
+This version puts it all into one database (see other folder structure for
+version that splits the vocab into a separate database)
+
+These files are (I believe) taken from 
+https://github.com/OHDSI/CommonDataModel/tree/main/inst/ddl/5.4/sql_server
+can't remeber where got the vocab_load.sql from - there are various hints that this
+is no longer so obviously centrally distribued for some reason to do with which team 
+is responsible for it
+(https://github.com/OHDSI/CommonDataModel/issues/487)
+
+The original parameterised files have been modified to put in explicit paths and schema names
+
+These files are intended for use directly from SSMS

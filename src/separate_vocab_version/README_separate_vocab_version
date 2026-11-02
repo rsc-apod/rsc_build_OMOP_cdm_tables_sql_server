@@ -1,0 +1,21 @@
+
+These are versions of OHDSI sourced scripts to build tables for CDM and 
+to load vocab files.
+
+These versions split out into separate databases
+* the vocab part
+* the non vocab part (the "clinical data" part; which sometimes seems to be referred to as the cdm evn though only part of whole cdm) 
+so that the same vocab part can be used with multiple non-vocab parts
+
+Before splitting into two databases these files are (I believe) taken from 
+https://github.com/OHDSI/CommonDataModel/tree/main/inst/ddl/5.4/sql_server
+can't remeber where got the vocab_load.sql from - there are various hints that this
+is no longer so obviously centrally distribued for some reason to do with which team 
+is responsible for it
+(https://github.com/OHDSI/CommonDataModel/issues/487)
+
+The sql scripts are parameterised so that db and schemas can be chosen
+
+The two python scripts run the sql scripts
+
+The parameterisation uses the syntax that sqlserver so could also use with small mods could used within SSMS using :setvar syntax (I think)
