@@ -9,7 +9,7 @@ so that the same vocab part can be used with multiple non-vocab parts
 
 Before splitting into two databases these files are (I believe) taken from 
 https://github.com/OHDSI/CommonDataModel/tree/main/inst/ddl/5.4/sql_server
-can't remeber where got the vocab_load.sql from - there are various hints that this
+can't remember where got the vocab_load.sql from - there are various hints that this
 is no longer so obviously centrally distribued for some reason to do with which team 
 is responsible for it
 (https://github.com/OHDSI/CommonDataModel/issues/487)
